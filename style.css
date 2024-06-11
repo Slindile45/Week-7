@@ -1,9 +1,11 @@
 body {
-    background: blanchedalmond;
+    background-image: url('background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .weather-app {
-    background: white;
+    background: #78A69C;
     max-width: 600px;
     margin: 30px auto;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -13,6 +15,7 @@ body {
 
 header {
     border-bottom: 1px solid blanchedalmond;
+    padding-bottom: 30px;
 }
 .search-form-input {
     background-color: blanchedalmond;
@@ -24,14 +27,20 @@ header {
 }
 
 .search-form-button {
-    background-color: aquamarine;
+    background-color: #885DF1;
     border: none;
     border-radius: 6px;
     color: white;
     font-size: 16px;
     margin-right: 5px;
+    padding: 15px 20px;
 }
 
+.search-form-button:hover {
+    color: #885DF1;
+    background-color: white;
+    cursor: pointer;
+}
 .weather-app-data {
     display: flex;
     justify-content: space-between;
@@ -39,6 +48,10 @@ header {
 
 main {
     padding: 36px 0;
+}
+
+strong {
+    color: #F6579A;
 }
 
 .weather-app-city {
