@@ -25,8 +25,6 @@ header {
   width: 80%;
   padding: 15px 20px;
   font-size: 16px;
-  position: relative;
-  transform: translate(50%, -50%);
 }
 
 .search-form-button {
@@ -37,15 +35,16 @@ header {
   font-size: 16px;
   margin-right: 5px;
   padding: 15px 20px;
-  animation: criss-cross-right 0.8s both;
-  animation-direction: alternate;
+  transform: translate(50%, -50%);
 }
 
 .search-form-button:hover {
   color: #885df1;
   background-color: #3E94E1;
   cursor: pointer;
-  transform: translate(10px, 0), scale(0.90);
+  animation: criss-cross-right 0.8s both;
+  animation-direction: alternate;
+  
 }
 .weather-app-data {
   display: flex;
@@ -82,10 +81,9 @@ strong {
   font-weight: bold;
 }
 
-.weather-app-icon {
+#icon {
   width: 90px;
   height: 90px;
-  margin-bottom: 5px;
 }
 .weather-app-details {
   font-size: 16px;
