@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div class="weather-app">
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city.." class="search-form-input" required
+                    id="search-form-input" />
+                <input type="submit" value="search" class="search-form-button" />
+            </form>
+
+        </header>
+        <main>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="weather-app-city" id="city">
+                        Durban
+                    </h1>
+                    <p class="weather-app-details">
+                        <span id="date-time">Sunday 16:09</span>, <span id="description">Sunny</span>
+                        <br />
+                        Humidity: <strong id="humidity">39%</strong>, wind: <strong id="wind-speed">5km/h</strong>
+                    </p>
+                </div>
+                <div class="weather-temperature-container">
+                    <div id="icon"></div>
+                    <div class="weather-app-temperature" id="temperature">20</div>
+                    <div class="degrees">°C</div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            This project was coded by
+            <a href="https://github.com/Slindile45" target="_blank">Slindile Cele</a>
+            and is on
+            <a href="https://github.com/Slindile45/week-7-project" target="_blank">Github</a>
+            and hosted on
+            <a href="https://week-7-project.netlify.app" target="_blank">Netlify</a>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
