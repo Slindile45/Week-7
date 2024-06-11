@@ -3,7 +3,7 @@ function refreshWeather(response) {
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
   let dateTimeElement = document.querySelector("#date-time");
-  let date = new date(response.data.time * 1000);
+  let date = new Date(response.data.time * 1000);
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
